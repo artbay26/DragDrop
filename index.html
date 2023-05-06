@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <style>
+        .wrapper {
+            position: relative;
+        }
+        
+        .poligon {
+            height: 450px;
+        }
+        
+        ._ibg {
+            position: relative;
+        }
+        
+        ._ibg img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+        
+        .bird {
+            height: 250px;
+        }
+        
+        .image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="poligon__body">
+            <div class="poligon firstPoligon">
+                <img class="bird" src=" https://i.gifer.com/tHi.gif">
+            </div>
+            <div class="poligon secondPoligon"></div>
+        </div>
+        <div class="image _ibg">
+            <img class="landscape" src="https://img.freepik.com/free-photo/fantastic-seascape-with-ripples_1232-424.jpg?t=st=1683353106~exp=1683353706~hmac=103388de79c2cdbac214e0ff90f899230c31337b3162c0219954a21d647acf23">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
